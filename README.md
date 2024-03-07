@@ -32,7 +32,6 @@ This is a full-stack blog application built using the MERN stack (MongoDB, Expre
     ```bash
     cd mern-blog/client
     npm install
-
     cd ../api
     npm instal
 3 .Set up environment variables:
@@ -42,6 +41,7 @@ Define the following environment variables:
 makefile
 4.Start the development server:
 # Start the backend server
+
 cd ../api
 npm start
 
