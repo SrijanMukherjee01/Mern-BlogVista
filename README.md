@@ -40,12 +40,10 @@ This is a full-stack blog application built using the MERN stack (MongoDB, Expre
 
 Create a .env file in the api directory.
 Define the following environment variables:
-MONGO_URL=<your_mongodb_connection_string>
-SECRET=<your_jwt_secret>
-BASE_URL=<base_url_of_your_frontend_app>
-
-4.Start the development server:
+makefile
+3.Start the development server:
 # Start the backend server
+
 cd ../api
 npm start
 
