@@ -32,13 +32,17 @@ This is a full-stack blog application built using the MERN stack (MongoDB, Expre
     ```bash
     cd mern-blog/client
     npm install
+    
     cd ../api
-    npm instal
+    npm install
 3 .Set up environment variables:
 
-Create a .env file in the api directory.
-Define the following environment variables:
-makefile
+Create a .env file in the api directory. 
+Define the following environment variables :
+MONGO_URL=<your_mongodb_connection_string>
+SECRET=<your_jwt_secret>
+BASE_URL=<base_url_of_your_frontend_app>
+
 4.Start the development server:
 # Start the backend server
 
@@ -48,7 +52,7 @@ npm start
 # Start the frontend development server
 cd ../client
 npm start
-5 .Open your browser and navigate to http://localhost:3000 to view the application.
+5 .Open your browser and navigate to http://localhost:5173 to view the application.
 
 6. Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
