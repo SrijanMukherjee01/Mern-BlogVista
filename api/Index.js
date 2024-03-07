@@ -11,7 +11,8 @@ const app=express();
 
 const jwt=require('jsonwebtoken');
 const salt = bcrypt.genSaltSync(10);
-const secret='aswrdk45455dfg3553r54dga246v4y91vdop4';
+// const secret='aswrdk45455dfg3553r54dga246v4y91vdop4';
+const secret=process.env.JWT_SECRET;
 const multer=require('multer');
 const upload = multer({ dest: 'uploads/' }) // Specify the destination directory for uploaded files
 require("dotenv").config();
