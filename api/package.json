@@ -16,7 +16,7 @@
   "description": "Backend Application",
   "main": "Index.js",
   "scripts": {
-    "start": "nodemon Index.js",
+    "start": "node Index.js",
     "build": "npm install && npm install --prefix client && npm run build --prefix client"
   },
   "author": "Srijan Mukherjee",
