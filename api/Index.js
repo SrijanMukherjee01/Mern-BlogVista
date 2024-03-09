@@ -20,7 +20,8 @@ require("dotenv").config();
  __dirname=path.resolve();
 const BASE_URL = process.env.BASE_URL;
 
-app.use(cors({ credentials: true, origin: `${BASE_URL}` }));
+app.use(cors({ origin: 'https://prismatic-tanuki-102309.netlify.app', credentials: true }));
+;
 app.use(express.json()); //middlewares
 app.use(cookieParser()) //middlewares for cookie parser
 app.use('/uploads',express.static(__dirname +'/uploads'));

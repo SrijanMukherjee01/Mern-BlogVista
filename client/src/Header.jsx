@@ -4,7 +4,7 @@ import { UserContext } from "./UserContext";
 export default function Header() {
   const {setUserInfo, userInfo} = useContext(UserContext);
   useEffect(() => {
-    fetch("http://localhost:8000/profile", {
+    fetch("https://mern-blogvista-2.onrender.com/profile", {
       credentials: "include",
     })
       .then((response) => {
@@ -16,7 +16,7 @@ export default function Header() {
   }, []);
 
   function logout() {
-    fetch("http://localhost:8000/logout", {
+    fetch("https://mern-blogvista-2.onrender.com/logout", {
       method: "POST",
       credentials: "include",
     });
