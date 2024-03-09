@@ -1,4 +1,4 @@
-// const path=require('path');
+const path=require('path');
 const express=require('express');
 const cors=require('cors');
 const { default: mongoose } = require('mongoose');
@@ -17,7 +17,7 @@ const secret = process.env.JWT_SECRET || 'fallback_secret';
 const multer=require('multer');
 const upload = multer({ dest: 'uploads/' }) // Specify the destination directory for uploaded files
 require("dotenv").config();
-//  __dirname=path.resolve();
+ __dirname=path.resolve();
 const BASE_URL = process.env.BASE_URL;
 
 app.use(cors({ credentials: true, origin: `${BASE_URL}` }));
