@@ -9,7 +9,7 @@ export default function PostPage() {
   const { id } = useParams();
   
   useEffect(() => {
-    fetch(`http://localhost:8000/post/${id}`)
+    fetch(`https://mern-blogvista.onrender.com/post/${id}`)
       .then((response) => response.json())
       .then((postInfo) => {
         setPostInfo(postInfo);
