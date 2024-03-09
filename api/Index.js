@@ -1,4 +1,4 @@
-const path=require('path');
+// const path=require('path');
 const express=require('express');
 const cors=require('cors');
 const { default: mongoose } = require('mongoose');
@@ -17,7 +17,7 @@ const secret = process.env.JWT_SECRET || 'fallback_secret';
 const multer=require('multer');
 const upload = multer({ dest: 'uploads/' }) // Specify the destination directory for uploaded files
 require("dotenv").config();
- __dirname=path.resolve();
+//  __dirname=path.resolve();
 const BASE_URL = process.env.BASE_URL;
 
 app.use(cors({ credentials: true, origin: `${BASE_URL}` }));
@@ -26,7 +26,7 @@ app.use(cookieParser()) //middlewares for cookie parser
 app.use('/uploads',express.static(__dirname +'/uploads'));
 
 // Serve static files from the 'dist' directory
-app.use(express.static(path.join(__dirname, '..', 'client', 'dist')));
+// app.use(express.static(path.join(__dirname, '..', 'client', 'dist')));
 
 // mongoose.connect('mongodb+srv://msrijan513:Y5BmqkV5KsDFlL0w@cluster0.yq7ulqi.mongodb.net')
 
@@ -186,9 +186,9 @@ app.post('/login',async(req,res)=>{
 });
 
 // Serve index.html file for any other routes
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'client', 'dist', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '..', 'client', 'dist', 'index.html'));
+// });
 
 const port=process.env.PORT || 8000;
 app.listen(port,()=>{
