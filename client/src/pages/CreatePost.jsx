@@ -22,7 +22,7 @@ async function createNewPost(ev){
     data.set('content',content);
     data.set('file',files[0]);
 
-    const response=await fetch('https://mern-blogvista-2.onrender.com/post',{
+    const response=await fetch('https://mern-blogvista.onrender.com/post',{
         method:'POST',
         body:data,
         credentials:'include'

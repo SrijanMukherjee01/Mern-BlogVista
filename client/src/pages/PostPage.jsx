@@ -44,7 +44,7 @@ export default function PostPage() {
         </div>
       )}
       <div className="imagePostPage">
-        <img src={`https://mern-blogvista-2.onrender.com/${postInfo.cover}`} alt="" />
+        <img src={`https://mern-blogvista.onrender.com/${postInfo.cover}`} alt="" />
       </div>
 
       <div
