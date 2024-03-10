@@ -25,7 +25,7 @@ async function createNewPost(ev){
     const response=await fetch('https://mern-blogvista.onrender.com/post',{
         method:'POST',
         body:data,
-        credentials:'include'
+        // credentials:'include'
 
     });
     if(response.ok){

@@ -5,7 +5,7 @@ export default function Header() {
   const {setUserInfo, userInfo} = useContext(UserContext);
   useEffect(() => {
     fetch("https://mern-blogvista.onrender.com/profile", {
-      credentials: "include",
+      // credentials: "include",
     })
       .then((response) => {
         response.json().then((userInfo) => {
@@ -18,7 +18,7 @@ export default function Header() {
   function logout() {
     fetch("https://mern-blogvista.onrender.com/logout", {
       method: "POST",
-      credentials: "include",
+      // credentials: "include",
     });
     setUserInfo(null);
   }

@@ -31,7 +31,7 @@ export default function EditPost() {
     const response = await fetch(`https://mern-blogvista.onrender.com/post`, {
       method: "PUT",
       body: data,
-      credentials: "include",
+      // credentials: "include",
       // credentials : "include"  is used to send the cookie to the server including the body data so that req.cookies can give us the token while functioning with the PUT request
     });
     if (response.ok) {
